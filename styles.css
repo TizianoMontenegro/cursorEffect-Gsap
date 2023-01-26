@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+    color: #0ff;
+    background-color: #001;
+    min-height: 100vh;
+    cursor: none;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
+    padding-top: 1.8em;
+}
+nav .logo{
+    padding: 1em;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2em;
+}
+nav ul li a{
+    border: 2px solid #0ff;
+    padding: .6em 2em;
+    border-radius: 20px;
+    font-size: .8em;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+main .title{
+    font-size: 6em;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #ff0, #0aa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+main .subtitle{
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+    width: max-content;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
+    font-size: 12px;
+}
+footer .networks{
+    display: flex;
+    gap: 1.5em;
+}
+footer .networks a{
+    color: #0ff;
+    text-decoration: none;
+    padding: .8em 1.2em;
+}
+
+.cursor{
+    position: fixed;
+    z-index: 600;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: 1px solid #0aa;
+    border-radius: 50%;
+    transition: transform .2s;
+    transform-origin: center center;
+    pointer-events: none;
+}
+.enlarge{
+    transform: scale(4);
+    mix-blend-mode: difference;
+    background-color: #fff;
+    border: none;
+}
+.enlarge2{
+    transform: scale(2);
+    mix-blend-mode: difference;
+    background-color: #fff;
+    border: none;
+}
